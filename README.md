@@ -67,7 +67,7 @@ Before you begin, ensure you have the following installed:
 
 ### Running the API
 
-1.  **Start the FastAPI server:**
+1.  **Start the FastAPI server locally:**
 
     ```bash
     uvicorn main:app --reload
@@ -75,5 +75,11 @@ Before you begin, ensure you have the following installed:
 
     The `--reload` flag will automatically restart the server on code changes.
 
-2.  **Access the API documentation:**
+2.  **Access the local API documentation:**
     Open your web browser and navigate to `http://localhost:8000/docs#/`. Here, you will find the interactive OpenAPI (Swagger UI) documentation, allowing you to test each API endpoint directly.
+
+### 🌐 Live Deployment
+
+This backend API is also deployed and hosted on **Render**. You can check out the live API documentation here:
+
+- **Live API Docs:** [https://recipe-finder-qql0.onrender.com/docs#/](https://recipe-finder-qql0.onrender.com/docs#/)
