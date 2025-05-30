@@ -64,8 +64,8 @@ async def give_recipe(language: str, chosen_recipe: str, recipe_list: str) -> st
         Then list the ingredients and quantities
         Follow with the step-by-step instructions, using:
         Number emoji bullets (1️⃣, 2️⃣, 3️⃣...) for each step
-        <br/> tags to separate each step
-        Format clearly and consistently.
+        <hr/> tags to separate each step and no new line tags between each step.
+        Format clearly and consistently. Make the headers Ingredients and Instructions in bold.
         Respond in the selected language.
         """,
         description="The agent gives the steps to the chosen recipe.",
