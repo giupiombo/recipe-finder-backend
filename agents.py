@@ -63,8 +63,7 @@ async def give_recipe(language: str, chosen_recipe: str, recipe_list: str) -> st
         Start with the estimated cooking time, preceded by a clock emoji: ⏰
         Then list the ingredients and quantities
         Follow with the step-by-step instructions, using:
-        Number emoji bullets (1️⃣, 2️⃣, 3️⃣...) for each step
-        <hr/> tags to separate each step and no new line tags between each step.
+        Number emoji bullets (1️⃣, 2️⃣, 3️⃣...) for each step.
         Format clearly and consistently. Make the headers Ingredients and Instructions in bold.
         Respond in the selected language.
         """,
