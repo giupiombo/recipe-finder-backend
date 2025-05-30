@@ -93,6 +93,7 @@ async def give_drink_recommendations(language: str, chosen_recipe: str, recipe_l
         Simply begin the response directly with the list of drink pairings.
         Use the following format for each item:
         1️⃣ Drink Name (Type): Short description...
+        Always include at least one alcoholic and one non-alcoholic option.
         Please respond in the selected language.
         """,
         description="The agent gives you a recommendation of drinks to match the recipe.",
