@@ -29,6 +29,7 @@ class RecipeSearchRequest(BaseModel):
     ingredients: str
     dietary_restrictions: str
     culinary: str
+    tools: str
 
 class RecipeDetailsRequest(BaseModel):
     language: str
@@ -55,7 +56,7 @@ async def search_recipes_route(req: RecipeSearchRequest):
     Searches for recipes using the Search Agent.
     """
     try:
-        result = await search_recipes(req.language, req.ingredients, req.dietary_restrictions, req.culinary)
+        result = await search_recipes(req.language, req.ingredients, req.dietary_restrictions, req.culinary, req.tools)
         return {"result": result}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Recipe search failed: {e}")
